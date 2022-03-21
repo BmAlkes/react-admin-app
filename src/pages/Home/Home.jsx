@@ -1,9 +1,11 @@
+import { Tab } from "@mui/material";
 import React from "react";
 import Charts from "../../components/Charts/Charts";
 import Featured from "../../components/featured/Featured";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Widget from "../../components/Widget/Widget";
+import Tables from "../../components/Tables/Tables";
 import "./home.scss";
 
 const Home = () => {
@@ -21,6 +23,10 @@ const Home = () => {
                 <div className="charts">
                     <Featured />
                     <Charts />
+                </div>
+                <div className="listContainer">
+                    <div className="listTitle">Latest Transaction</div>
+                    <Tables />
                 </div>
             </div>
         </div>
