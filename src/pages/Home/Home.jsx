@@ -1,4 +1,3 @@
-import { Tab } from "@mui/material";
 import React from "react";
 import Charts from "../../components/Charts/Charts";
 import Featured from "../../components/featured/Featured";
@@ -22,7 +21,7 @@ const Home = () => {
                 </div>
                 <div className="charts">
                     <Featured />
-                    <Charts />
+                    <Charts aspect={1 / 2} title="Last 6 months (Revenue)" />
                 </div>
                 <div className="listContainer">
                     <div className="listTitle">Latest Transaction</div>
