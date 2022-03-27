@@ -14,28 +14,35 @@ import VpnKeyOutlinedIcon from "@mui/icons-material/VpnKeyOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">
-                    <img src={logo} alt="" />
-                </span>
+                <Link to="/">
+                    <span className="logo">
+                        <img src={logo} alt="" />
+                    </span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">Main</p>
-                    <li>
-                        <DashboardIcon className="icon" />
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
                     <p className="title">Lists</p>
-                    <li>
-                        <PersonIcon className="icon" />
-                        <span>Users</span>
-                    </li>
+                    <Link to="/users" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PersonIcon className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
                     <li>
                         <Inventory2Icon className="icon" />
                         <span>Products</span>

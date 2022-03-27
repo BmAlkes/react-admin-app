@@ -1,6 +1,25 @@
 .dataTable {
     height: 500px;
     padding: 20px;
+    .dataTableTitle {
+        width: 100%;
+        font-size: 20px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .link {
+            text-decoration: none;
+            color: green;
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
 
     .datagrid {
         font-size: 10px;
